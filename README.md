@@ -2,13 +2,13 @@
 This demo includes a container for runing Lag Llama in Snowflake Container Services. The container includes the Lag Llama model and the GluonTS packages necessary for getting predictions. A sample notebook is included, but you will have to connect to your own time series data sources (a sample dataset is provided in the repo).
 
 1. Build the Docker image
-   `docker build --rm --platform linux/amd64 -t lagllama .`
+   `docker build --rm --platform linux/amd64 -t lagllama2 .`
                              
 3. Tag and push it to Snowpark container services image repo
-   docker tag lagllama
+   docker tag lagllama2
    Based on the location of YOUR image folder:
-   sfsenorthamerica-polaris2.registry.snowflakecomputing.com/mistral_vllm_db/public/images/lagllama
-   `docker push sfsenorthamerica-polaris2.registry.snowflakecomputing.com/mistral_vllm_db/public/images/lagllama`
+   sfsenorthamerica-polaris2.registry.snowflakecomputing.com/mistral_vllm_db/public/images/lagllama2
+   `docker push sfsenorthamerica-polaris2.registry.snowflakecomputing.com/mistral_vllm_db/public/images/lagllama2`
    
 3. Push the lagllama_spec.yaml to YOUR stage. Make sure the spec file is set to your environment.
 
